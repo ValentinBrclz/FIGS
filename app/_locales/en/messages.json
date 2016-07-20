@@ -1,0 +1,50 @@
+{
+	"appName": {
+		"message": "FIGS",
+		"description": "The name of the application"
+	},
+	"appNameLong": {
+		"message": "FIGS - Find In Google Serp",
+		"description": "The name of the application (long version)"
+	},
+	"appDescription": {
+		"message": "Find In Google Serp (FIGS) is an easy to use extension to get the position of a website in Google Results",
+		"description": "The description of the application"
+	},
+	"error": {
+		"message": "ERREUR"
+	},
+	"errorNotInIncognito": {
+		"message": "Please use me only in incognito mode for accurate results!"
+	},
+	"errorPositionNotification": {
+		"message": "There was an error while trying to get the position."
+	},
+	"extensionLoaded": {
+		"message": "Extension $extname$ successfully loaded!",
+		"placeholders": {
+			"extname": {
+				"content": "$1"
+			}
+		}
+	},
+	"previousVersion": {
+		"message": "Previous version of $extname$: ",
+		"placeholders": {
+			"extname": {
+				"content": "$1"
+			}
+		}
+	},
+	"success": {
+		"message": "Success"
+	},
+	"successPositionNotification": {
+		"message": "The position of $domain$ for the keyword has been saved in the clipboard.",
+		"placeholders": {
+			"domain": {
+				"content": "$1"
+			}
+		}
+	}
+}

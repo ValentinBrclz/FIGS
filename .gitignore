@@ -1,0 +1,15 @@
+# Node, bower, ...
+node_modules
+dist
+.sass-cache
+app/bower_components
+test/bower_components
+package
+app/scripts
+
+# Temporary
+temp
+.tmp
+
+# Jetbrains
+.idea
