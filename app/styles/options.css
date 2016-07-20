@@ -1,3 +1,10 @@
 body {
 	padding: 20px;
+	text-align: center;
+}
+
+#status {
+	color: green;
+	font-weight: bold;
+	white-space: pre-wrap;
 }

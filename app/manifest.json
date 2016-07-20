@@ -30,6 +30,7 @@
 		"activeTab",
 		"clipboardWrite",
 		"notifications",
+		"storage",
 		"https://*/*"
 	],
 	"options_ui": {
