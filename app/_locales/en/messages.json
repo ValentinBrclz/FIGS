@@ -12,7 +12,7 @@
 		"description": "The description of the application"
 	},
 	"error": {
-		"message": "ERREUR"
+		"message": "ERROR"
 	},
 	"errorNotInIncognito": {
 		"message": "Please use me only in incognito mode for accurate results!"
