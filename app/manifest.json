@@ -14,18 +14,6 @@
 			"scripts/background.js"
 		]
 	},
-	"content_scripts": [
-		{
-			"matches": [
-				"https://*/*"
-			],
-			"js": [
-				"scripts/contentscript.js"
-			],
-			"run_at": "document_end",
-			"all_frames": false
-		}
-	],
 	"permissions": [
 		"activeTab",
 		"clipboardWrite",

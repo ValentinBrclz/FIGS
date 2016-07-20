@@ -14,11 +14,11 @@
 	"error": {
 		"message": "ERROR"
 	},
-	"errorNotInIncognito": {
-		"message": "Please use me only in incognito mode for accurate results!"
+	"errorDomainNotSet": {
+		"message": "You need to configure the domain you want to look for by clicking right on the extension icon and selecting \"options\"."
 	},
-	"errorPositionNotification": {
-		"message": "There was an error while trying to get the position."
+	"errorNotInIncognito": {
+		"message": "Please use me only in incognito mode for accurate results. Would you like to switch to incognito and try again?"
 	},
 	"extensionLoaded": {
 		"message": "Extension $extname$ successfully loaded!",
