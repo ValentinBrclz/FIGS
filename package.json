@@ -1,7 +1,6 @@
 {
 	"name": "figs",
-	"private": true,
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/ValentinBrclz/figs.git"
@@ -17,7 +16,7 @@
 		"name": "Valentin Berclaz",
 		"url": "http://www.valentinberclaz.com/"
 	},
-	"license": "SEE LICENSE IN /LICENSE",
+	"license": "GPL-2.0",
 	"bugs": {
 		"url": "https://github.com/ValentinBrclz/figs/issues"
 	},
