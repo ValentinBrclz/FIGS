@@ -28,6 +28,9 @@
 			}
 		}
 	},
+	"licenseBrief": {
+		"message": "Copyright \u00a9 2016 Valentin Berclaz\n\nThis extension comes with\nABSOLUTELY NO WARRANTY."
+	},
 	"previousVersion": {
 		"message": "Previous version of $extname$: ",
 		"placeholders": {

@@ -10,6 +10,6 @@ Find In Google Serp (FIGS) is an easy to use extension to get the position of a 
 Feel free to test the extension and contribute to the project :-)
 
 ## Licensing and credits
-* License: GNU General Public License (2.0)
+* License: GNU General Public License, version 2.0
 * Author: [Valentin Brclz](https://github.com/ValentinBrclz)
 * Icon inspired by a work from Tubezlob under the CC0 license
