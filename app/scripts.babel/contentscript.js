@@ -20,7 +20,7 @@ function parseHTML(domain) {
 chrome.storage.sync.get('domain', function(item) {
 	var domain = item.domain;
 
-	if(domain.length != 0) {
+	if (domain && domain.length != 0) {
 		// Parse the HTML and give the results back to background
 		chrome.runtime.sendMessage({position: parseHTML(domain)});
 	} else {

@@ -5,7 +5,7 @@ var notificationOpt = {
 	type: 'basic',
 	title: chrome.i18n.getMessage('appName') + ' - ' + chrome.i18n.getMessage('success'),
 	message: chrome.i18n.getMessage('successPositionNotification'),
-	iconUrl: 'images/icon-128.png'
+	iconUrl: 'images/icon-128.png' 
 };
 
 function showPreviousVersion(details) {
@@ -14,7 +14,7 @@ function showPreviousVersion(details) {
 }
 
 function checkContext(tabId, changeInfo, tab) {
-	if (tab.url.indexOf('https://www.google.') == 0) {
+	if (tab.url && tab.url.indexOf('https://www.google.') == 0) {
 		chrome.pageAction.show(tabId);
 	}
 }

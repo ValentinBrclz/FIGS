@@ -7,9 +7,9 @@ Find In Google Serp (FIGS) is an easy to use extension to get the position of a 
 [![License](https://img.shields.io/badge/license-GPLv2-blue.svg?style=flat)](http://opensource.org/licenses/GPL-2.0)
 
 ## Contribute
-Feel free to test and contribute to this project :-)
+Feel free to test the extension and contribute to the project :-)
 
 ## Licensing and credits
-* License: GNU General Public Licence (2.0)
+* License: GNU General Public License (2.0)
 * Author: [Valentin Brclz](https://github.com/ValentinBrclz)
 * Icon inspired by a work from Tubezlob under the CC0 license
