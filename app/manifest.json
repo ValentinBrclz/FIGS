@@ -1,13 +1,16 @@
 {
 	"name": "__MSG_appNameLong__",
+	"short_name": "__MSG_appName__",
 	"version": "0.0.1",
 	"manifest_version": 2,
 	"description": "__MSG_appDescription__",
+	"default_locale": "en",
 	"icons": {
 		"16": "images/icon-16.png",
+		"19": "images/icon-19.png",
+		"38": "images/icon-38.png",
 		"128": "images/icon-128.png"
 	},
-	"default_locale": "en",
 	"background": {
 		"scripts": [
 			"scripts/chromereload.js",
@@ -25,11 +28,13 @@
 		"page": "options.html",
 		"chrome_style": true
 	},
+	"offline_enabled": false,
 	"page_action": {
 		"default_icon": {
 			"19": "images/icon-19.png",
 			"38": "images/icon-38.png"
 		},
 		"default_title": "__MSG_appNameLong__"
-	}
+	},
+	"homepage_url": "https://github.com/ValentinBrclz/FIGS"
 }
