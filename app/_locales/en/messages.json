@@ -18,7 +18,7 @@
 		"message": "You need to configure the domain you want to look for by clicking right on the extension icon and selecting \"options\"."
 	},
 	"errorNotInIncognito": {
-		"message": "Please use me only in incognito mode for accurate results. Would you like to switch to incognito and try again?"
+		"message": "Please use FIGS only in incognito mode for accurate results.\n\nWould you like to switch to incognito and try again?"
 	},
 	"extensionLoaded": {
 		"message": "Extension $extname$ successfully loaded!",
@@ -29,7 +29,7 @@
 		}
 	},
 	"licenseBrief": {
-		"message": "Copyright \u00a9 2016 Valentin Berclaz\n\nThis extension comes with\nABSOLUTELY NO WARRANTY."
+		"message": "This extension comes with\nABSOLUTELY NO WARRANTY.\n\nCopyright \u00a9 2016 Valentin Berclaz"
 	},
 	"previousVersion": {
 		"message": "Previous version of $extname$: ",
@@ -46,6 +46,6 @@
 		"message": "The position for the current keyword has been saved in the clipboard."
 	},
 	"successSavingOptions": {
-		"message": "Domain saved!"
+		"message": "Domain successfully saved!"
 	}
 }

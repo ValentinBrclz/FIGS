@@ -44,7 +44,7 @@ function save_options() {
  * Get and display the options
  */
 function restore_options() {
-	chrome.storage.sync.get({domain: 'default.com'}, function(item) {
+	chrome.storage.sync.get('domain', function(item) {
 		document.getElementById('domain').value = item.domain;
 	});
 }
