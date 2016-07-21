@@ -1,6 +1,8 @@
 'use strict';
 
-// Saves options to chrome.storage
+/**
+ * Save the options
+ */
 function save_options() {
 	var domain = document.getElementById('domain').value;
 	chrome.storage.sync.set({domain: domain}, function() {
@@ -19,13 +21,17 @@ function save_options() {
 	});
 }
 
-// Restores state using the preferences stored in chrome.storage.
+/**
+ * Get and display the options
+ */
 function restore_options() {
 	chrome.storage.sync.get({domain: 'default.com'}, function(item) {
 		document.getElementById('domain').value = item.domain;
 	});
 }
 
-// Listeners
+
+/////////////////////////////////
+// Chrome listeners
 document.addEventListener('DOMContentLoaded', restore_options);
 document.getElementById('save').addEventListener('click', save_options);
