@@ -61,10 +61,9 @@ gulp.task('html', () => {
 		.pipe(gulp.dest('dist'));
 });
 
-gulp.task('chromeManifest', () => {
+gulp.task('build:chromeManifest', () => {
 	return gulp.src('app/manifest.json')
 		.pipe($.chromeManifest({
-			buildnumber: true,
 			background: {
 				target: 'scripts/background.js',
 				exclude: [
@@ -77,6 +76,14 @@ gulp.task('chromeManifest', () => {
 		.pipe($.if('*.js', $.uglify()))
 		.pipe($.if('*.js', $.sourcemaps.write('.')))
 		.pipe(gulp.dest('dist'));
+});
+
+gulp.task('build:contentscript', () => {
+	return gulp.src('app/scripts/contentscript.js')
+		.pipe($.sourcemaps.init())
+		.pipe($.uglify())
+		.pipe($.sourcemaps.write('.'))
+		.pipe(gulp.dest('dist/scripts'));
 });
 
 gulp.task('babel', () => {
@@ -125,7 +132,8 @@ gulp.task('package', function() {
 
 gulp.task('build', (cb) => {
 	runSequence(
-		'lint', 'babel', 'chromeManifest',
+		'clean', 'lint', 'babel',
+		'build:chromeManifest', 'build:contentscript',
 		['html', 'images', 'extras'],
 		'size', cb);
 });
