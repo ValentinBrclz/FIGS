@@ -1,4 +1,4 @@
-// generated on 2016-07-20 using generator-chrome-extension 0.5.6
+// Generated on 2016-07-20 using generator-chrome-extension 0.5.6
 import gulp from "gulp";
 import gulpLoadPlugins from "gulp-load-plugins";
 import del from "del";

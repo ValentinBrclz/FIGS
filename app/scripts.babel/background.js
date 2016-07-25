@@ -21,7 +21,6 @@
 
 /**
  * Options for the notification
- * @type {{type: string, title: string, message: string, iconUrl: string}}
  */
 var notificationOpt = {
 	installed: {
@@ -57,7 +56,7 @@ function showPreviousVersion(details) {
  * @param tab
  */
 function checkContext(tabId, changeInfo, tab) {
-	if (tab.url && tab.url.indexOf('https://www.google.') == 0) {
+	if (tab.url && tab.url.indexOf('https://www.google.') === 0) {
 		chrome.pageAction.show(tabId);
 	}
 }
@@ -74,7 +73,7 @@ function handleUserClick(tab) {
 		// Wait for load completion
 		chrome.tabs.onUpdated.addListener(executeContentScript);
 	} else {
-		if(confirm(chrome.i18n.getMessage('errorNotInIncognito'))) {
+		if (window.confirm(chrome.i18n.getMessage('errorNotInIncognito'))) {
 			chrome.windows.create({url: tab.url, incognito: true});
 		}
 	}
@@ -126,8 +125,9 @@ function handleContentScriptResponse(request, sender, sendResponse) {
 	chrome.notifications.create(null, notificationOpt.success);
 }
 
-/////////////////////////////////
-// Chrome listeners
+/**
+ * Chrome listeners
+ */
 chrome.runtime.onInstalled.addListener(showPreviousVersion);
 
 chrome.tabs.onUpdated.addListener(checkContext);
