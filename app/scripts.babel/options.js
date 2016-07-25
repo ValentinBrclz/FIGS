@@ -22,7 +22,7 @@
 /**
  * Save the options
  */
-function save_options() {
+function saveOptions() {
 	var domain = document.getElementById('domain').value;
 	chrome.storage.sync.set({domain: domain}, function() {
 
@@ -43,14 +43,15 @@ function save_options() {
 /**
  * Get and display the options
  */
-function restore_options() {
+function restoreOptions() {
 	chrome.storage.sync.get('domain', function(item) {
 		document.getElementById('domain').value = item.domain;
 	});
 }
 
 
-/////////////////////////////////
-// Chrome listeners
-document.addEventListener('DOMContentLoaded', restore_options);
-document.getElementById('save').addEventListener('click', save_options);
+/**
+ * Chrome listeners
+ */
+document.addEventListener('DOMContentLoaded', restoreOptions);
+document.getElementById('save').addEventListener('click', saveOptions);

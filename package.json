@@ -45,14 +45,20 @@
     "gulp-uglify": "^1.5.3",
     "gulp-useref": "^3.0.8",
     "gulp-zip": "^3.2.0",
+		"jshint": "^2.9.2",
     "main-bower-files": "^2.11.1",
     "run-sequence": "^1.1.5",
     "wiredep": "^4.0.0"
   },
+	"scripts": {
+		"lint": "jshint app/scripts.babel && gulp lint",
+		"test": "npm run-script lint"
+	},
   "eslintConfig": {
     "env": {
       "node": true,
-      "browser": true
+			"browser": true,
+			"es6": true
     },
     "globals": {
       "chrome": true
@@ -62,7 +68,16 @@
       "quotes": [
         2,
         "single"
-      ]
+			],
+			"prefer-const": "error"
     }
+	},
+	"jshintConfig": {
+		"browser": true,
+		"node": true,
+		"globals": {
+			"chrome": true
+		},
+		"esversion": 6
   }
 }
