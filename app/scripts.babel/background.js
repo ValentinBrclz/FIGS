@@ -24,10 +24,10 @@
  * @type {{type: string, title: string, message: string, iconUrl: string}}
  */
 var notificationOpt = {
-	license: {
+	installed: {
 		type: 'basic',
 		title: chrome.i18n.getMessage('appNameLong'),
-		message: chrome.i18n.getMessage('licenseBrief'),
+		message: chrome.i18n.getMessage('installationBrief', '?'),
 		iconUrl: 'images/icon-128.png'
 	},
 	success: {
@@ -45,7 +45,9 @@ var notificationOpt = {
 function showPreviousVersion(details) {
 	console.log(chrome.i18n.getMessage('previousVersion', chrome.i18n.getMessage('appName')),
 		details.previousVersion);
-	chrome.notifications.create(null, notificationOpt.license);
+	notificationOpt.installed.message =
+		chrome.i18n.getMessage('installationBrief', details.previousVersion);
+	chrome.notifications.create(null, notificationOpt.installed);
 }
 
 /**
