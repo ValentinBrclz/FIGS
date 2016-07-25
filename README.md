@@ -2,7 +2,7 @@ Find In Google Serp (FIGS)
 ======
 Find In Google Serp (FIGS) is an easy to use extension to get the position of a website in Google Results
 
-[![Build Status](https://api.travis-ci.org/ValentinBrclz/figs.png)](http://travis-ci.org/ValentinBrclz/figs)
+[![Build Status](https://api.travis-ci.org/ValentinBrclz/FIGS.png)](http://travis-ci.org/ValentinBrclz/FIGS)
 [![Dependency Status](https://img.shields.io/david/ValentinBrclz/figs.svg?style=flat)](https://david-dm.org/ValentinBrclz/figs#info=Dependencies)
 [![devDependency Status](https://img.shields.io/david/dev/ValentinBrclz/figs.svg?style=flat)](https://david-dm.org/ValentinBrclz/figs#info=devDependencies)
 [![License](https://img.shields.io/badge/license-GPLv2-blue.svg?style=flat)](http://opensource.org/licenses/GPL-2.0)
