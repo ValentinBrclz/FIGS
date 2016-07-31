@@ -45,7 +45,9 @@ function saveOptions() {
  */
 function restoreOptions() {
 	chrome.storage.sync.get('domain', function(item) {
-		document.getElementById('domain').value = item.domain;
+		if (item.domain) {
+			document.getElementById('domain').value = item.domain;
+		}
 	});
 }
 
