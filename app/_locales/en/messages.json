@@ -28,13 +28,8 @@
 			}
 		}
 	},
-	"licenseBrief": {
-		"message": "Version %version% loaded.\n\nThis extension comes with\nABSOLUTELY NO WARRANTY.",
-		"placeholders": {
-			"version": {
-				"content": "$1"
-			}
-		}
+	"installationBrief": {
+		"message": "This extension comes with\nABSOLUTELY NO WARRANTY."
 	},
 	"previousVersion": {
 		"message": "Previous version of $extname$: ",
